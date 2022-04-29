@@ -3,6 +3,14 @@ import WeatherSearch from "./WeatherSearch.js";
 import './App.css';
 
 export default function App() {
+   let weatherData = {
+    city: "San Diego",
+    temperature: 20,
+    description: "Sunny",
+    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+    humidity: 25,
+    wind: 0
+  };  
   return (
     <div className="App">
       <div className="weather-app">  
@@ -30,21 +38,26 @@ export default function App() {
       </div>
       <div>
         <h2>
-          San Diego, USA
+          {weatherData.city}
         </h2>
-        <p id="description"></p>
+        <p></p>
         <div className="row">
         <div className="col-3">
-          <h1 id="temperature">
-            &#9925 52
+          <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+            />
+          <h1>
+            {weatherData.temperature}{" "}
             <span className="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
+              <a href="#">°C</a> |
+              <a href="#">°F</a>
             </span>
-        </h1>
+          </h1>
         <div className="col-6">
           <p>
-            Humidity: <span id="humidity"></span>%<br />Wind: <span id="wind"></span> km/h
+            {weatherData.humidity} <span></span>%<br />{weatherData.wind} <span></span> km/h
           </p>
         </div>
         </div>
@@ -55,7 +68,12 @@ export default function App() {
        <div className="row">
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
-            Sun<br />&#9925
+            Sun<br />
+            <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+            />
           </h3>
           <p>
             70°F / 51°F
@@ -63,7 +81,12 @@ export default function App() {
         </div>
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
-            Mon <br /> &#9925
+            Mon <br />
+            <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+            />
           </h3>
           <p>
             69°F / 51°F
@@ -71,7 +94,12 @@ export default function App() {
         </div>
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
-            Tues<br /> &#9728
+            Tues<br />
+            <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+              />
           </h3>
           <p>
             71°F / 52°F
@@ -79,7 +107,12 @@ export default function App() {
           </div>
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
             <h3>
-              Wed<br /> &#9925
+              Wed<br />
+              <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+              />
             </h3>
             <p>
               73°F / 52°F
@@ -87,7 +120,12 @@ export default function App() {
           </div>
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
             <h3>
-              Thurs<br /> &#9925
+              Thurs<br />
+              <img
+              src={weatherData.imgUrl}
+              alt={weatherData.description}
+              className="float-left"
+              />
             </h3>
             <p>
               70°F / 51°F
