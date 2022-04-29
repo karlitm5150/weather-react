@@ -51,8 +51,8 @@ export default function App() {
           <h1>
             {weatherData.temperature}{" "}
             <span className="units">
-              <a href="#">°C</a> |
-              <a href="#">°F</a>
+              <a>°C</a> |
+              <a>°F</a>
             </span>
           </h1>
         <div className="col-6">
