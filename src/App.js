@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="weather-app">  
-      <form className="search-form" id="search-form">
+      <form className="search-form">
           <div className="row">
             <div className="col-6">
               <WeatherSearch />
@@ -21,7 +21,6 @@ export default function App() {
             <div className="col-3">
               <button
                 className="btn btn-success w-100"
-                id="current-location-button"
               >
                 Current
               </button>
@@ -30,10 +29,9 @@ export default function App() {
         </form>
       </div>
       <div>
-        <h2 id="city">
+        <h2>
           San Diego, USA
         </h2>
-        <p id="date"></p>
         <p id="description"></p>
         <div className="row">
         <div className="col-3">
@@ -60,7 +58,7 @@ export default function App() {
             Sun<br />&#9925
           </h3>
           <p>
-            70&#8457 / 51&#8457
+            70°F / 51°F
           </p>
         </div>
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
@@ -68,7 +66,7 @@ export default function App() {
             Mon <br /> &#9925
           </h3>
           <p>
-            69&#8457 / 51&#8457
+            69°F / 51°F
           </p>
         </div>
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
@@ -76,7 +74,7 @@ export default function App() {
             Tues<br /> &#9728
           </h3>
           <p>
-            71&#8457 / 52&#8457
+            71°F / 52°F
           </p>
           </div>
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
@@ -84,7 +82,7 @@ export default function App() {
               Wed<br /> &#9925
             </h3>
             <p>
-              73&#8457 / 52&#8457
+              73°F / 52°F
             </p>
           </div>
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
@@ -92,7 +90,7 @@ export default function App() {
               Thurs<br /> &#9925
             </h3>
             <p>
-              70&#8457 / 51&#8457
+              70°F / 51°F
             </p>
           </div>
         </div>

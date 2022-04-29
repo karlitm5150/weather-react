@@ -8,7 +8,6 @@ export default function WeatherSearch() {
                 placeholder="Type a city.."
                 autofocus="on"
                 autocomplete="off"
-                id="city-input"
                 className="form-control shadow-sm"
               />
     );
