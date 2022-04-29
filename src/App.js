@@ -1,5 +1,5 @@
 import React from "react";
-import Weather from "./Weather.js";
+import WeatherSearch from "./WeatherSearch.js";
 import './App.css';
 
 export default function App() {
@@ -9,14 +9,7 @@ export default function App() {
       <form className="search-form" id="search-form">
           <div className="row">
             <div className="col-6">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                className="form-control shadow-sm"
-              />
+              <WeatherSearch />
             </div>
             <div className="col-3">
               <input
