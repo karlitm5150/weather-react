@@ -13,6 +13,7 @@ export default function App() {
   };  
   return (
     <div className="App">
+      <div className="container">
       <div className="weather-app">  
       <form className="search-form">
           <div className="row">
@@ -130,6 +131,7 @@ export default function App() {
               70°F / 51°F
             </p>
           </div>
+        </div>
         </div>
 
       <footer>
