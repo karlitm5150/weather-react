@@ -132,8 +132,12 @@ export default function App() {
           </div>
         </div>
 
-
-
+      <footer>
+        This projet is created by Karli Thuen and is{" "}
+        <a href="https://github.com/karlitm5150/weather-react"
+        target="_blank">open-sourced on GitHub
+        </a> 
+      </footer> 
 
     </div>  
   );
