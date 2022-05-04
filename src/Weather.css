@@ -1,0 +1,14 @@
+.Weather .dates {
+    text-align: center;
+}
+
+.Weather .search-form {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.Weather .units {
+    position: relative;
+    top: -15px;
+    font-size: 17px;
+}

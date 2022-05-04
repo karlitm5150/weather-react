@@ -1,22 +1,29 @@
-h1 h2 h3 h4 h5 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.App {
+    font-family: "Trebuchet MS",
+    "Lucida Sans Unicode",
+    "Lucida Grande",
+    "Lucida Sans",
+    Arial,
+    sans-serif;
+    padding: 20px;
+    border: #DFE2E5 solid 1px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
-h1 {
-  color: black;
+.App h2 {
+  padding-top: 20px;
 }
-
-.dates {
+.Weather .dates {
   text-align: center;
 }
 
-.search-form {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.Weather .search-form {
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.units {
+.Weather .units {
   position: relative;
   top: -15px;
   font-size: 17px;
