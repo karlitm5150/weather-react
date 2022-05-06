@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
     return (
@@ -13,11 +14,9 @@ export default function WeatherInfo(props) {
         <p></p>
         <div className="row">
         <div className="col-3">
-          <img
-              src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-            />
+          <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           <h1 className="temperature">
             {Math.round(props.data.temperature)}{" "}
             <span className="units">
@@ -38,11 +37,9 @@ export default function WeatherInfo(props) {
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
             Sun<br />
-            <img
-              src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-            />
+            <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           </h3>
           <p>
             70°F / 51°F
@@ -51,11 +48,9 @@ export default function WeatherInfo(props) {
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
             Mon <br />
-            <img
-              src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-            />
+            <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           </h3>
           <p>
             69°F / 51°F
@@ -64,11 +59,9 @@ export default function WeatherInfo(props) {
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
             Tues<br />
-            <img
-              src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-              />
+            <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
           </h3>
           <p>
             71°F / 52°F
@@ -77,11 +70,9 @@ export default function WeatherInfo(props) {
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
             <h3>
               Wed<br />
-              <img
-              src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-              />
+              <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
             </h3>
             <p>
               73°F / 52°F
@@ -90,11 +81,9 @@ export default function WeatherInfo(props) {
           <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
             <h3>
               Thurs<br />
-              <img
-             src={props.data.iconUrl}
-              alt={props.data.description}
-              className="float-left"
-              />
+             <div classname="float-left">
+            <WeatherIcon code={props.data.icon} />
+          </div>
             </h3>
             <p>
               70°F / 51°F
