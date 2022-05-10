@@ -15,10 +15,10 @@ export default function WeatherInfo(props) {
         <p></p>
         <div className="row">
         <div className="col-3">
-          <div classname="float-left">
+          <div className="float-left">
             <WeatherIcon code={props.data.icon} />
           </div>
-          <div classname="float-left">
+          <div className="float-left">
             <WeatherTemperature celcius={props.data.temperature} />
           </div>
         <div className="col-6">
@@ -31,63 +31,7 @@ export default function WeatherInfo(props) {
       </div>
 
 
-       <div className="row">
-        <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
-          <h3>
-            Sun<br />
-            <div classname="float-left">
-            <WeatherIcon code={props.data.icon} />
-          </div>
-          </h3>
-          <p>
-            70°F / 51°F
-          </p>
-        </div>
-        <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
-          <h3>
-            Mon <br />
-            <div classname="float-left">
-            <WeatherIcon code={props.data.icon} />
-          </div>
-          </h3>
-          <p>
-            69°F / 51°F
-          </p>
-        </div>
-        <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
-          <h3>
-            Tues<br />
-            <div classname="float-left">
-            <WeatherIcon code={props.data.icon} />
-          </div>
-          </h3>
-          <p>
-            71°F / 52°F
-          </p>
-          </div>
-          <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
-            <h3>
-              Wed<br />
-              <div classname="float-left">
-            <WeatherIcon code={props.data.icon} />
-          </div>
-            </h3>
-            <p>
-              73°F / 52°F
-            </p>
-          </div>
-          <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
-            <h3>
-              Thurs<br />
-             <div classname="float-left">
-            <WeatherIcon code={props.data.icon} />
-          </div>
-            </h3>
-            <p>
-              70°F / 51°F
-            </p>
-          </div>
-        </div>
+      
         </div>
     );
 }
