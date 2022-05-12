@@ -17,7 +17,7 @@ export default function WeatherForecast(props) {
         <div className="row">
         <div className="col-2 shadow p-3 mb-5 bg-body rounded border text-center">
           <h3>
-            {forcast[0].dt}<br />
+            {forecast[0].dt}<br />
             <div classname="float-left">
             <WeatherIcon code={forecast[0].weather[0].icon} />
           </div>
