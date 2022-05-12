@@ -11,7 +11,7 @@ export default function App() {
         </div>
 
       <footer>
-        This projet is created by Karli Thuen and is{" "}
+        This project is created by Karli Thuen and is{" "}
         <a href="https://github.com/karlitm5150/weather-react">open-sourced on GitHub
         </a> 
       </footer> 
